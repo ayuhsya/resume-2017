@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{extarticle} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+\fontspec{[FontAwesome.otf]}
+
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.40cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{textcomp}
+
+\defaultfontfeatures{Extension = .otf}
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{0.75}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+\normalsize \faGithub\ {\href{https://github.com/ayuhsya}{ayuhsya}}\\
+\normalsize  \faLinkedinSquare\ {\href{https://www.linkedin.com/in/ayushya}{ayushya}}\\
+\columnbreak
+\normalsize\par{\centering{\LARGE\textsc{Ayushya} Anand}\par} % Your name
+\par{\centering\footnotesize {\textsc{D334, RP Hall of Residence, IIT Kharagpur, WB, India - 721302}}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:ayushm.kgp@gmail.com}{ayushm.kgp@gmail.com}}\\
+\raggedright\hfill{\faPhone\ +91-7797437135}
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.6cm}
+\section{Education}
+
+\begin{tabular}{r|p{17.5cm}}	
+2013-2018 & M. Sc. in \textbf{Mathematics and Computing}\hfill\textsc{Cgpa}: 6.95/10.0\\
+\textsc{(Expected)}&\textbf{Indian Institute of Technology}, Kharagpur\\
+& \footnotesize{\textbf{Coursework: }{Programming and Data Structures, Design and Analysis of Algorithms, Systems Programming, Object Oriented Systems Design, Database
+Management Systems, Operating Systems, Cryptography and Network Security, Graph Theory and Algorithms | Probability and Statistics}}\\
+\multicolumn{2}{c}{} \\
+2013 & \textbf{Senior School Certificate Examination, CBSE}\hfill\textsc{Percentage}: 89\%\\
+& \footnotesize{Shiv Jyoti Convent Senior Secondary School, Kota}\\
+\multicolumn{2}{c}{} \\
+2011 & \textbf{Secondary School Examination, CBSE}\hfill\textsc{Cgpa}: 10/10\\
+& \footnotesize{Nirmala Convent Senior Secondary School, Renukut}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\begin{tabular}{r|p{15cm}}
+\textsc{Programming} & \textit{Proficient in} C, C++ \textit{familiar with} JavaScript, Python, Java, Assembly \\
+\textsc{Libraries / Frameworks} & Node.js, Express, AngularJS, Parse, Django\\
+\textsc{Databases} & MySQL, SQLite, MongoDB\\
+\textsc{Systems / Platforms} & Git, Linux\\
+\textsc{Markup / Templating} & HTML, CSS, LaTeX
+\end{tabular}
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{18cm}}
+
+\textsc{Jun 17} & \textbf{Resarch Intern}\hfill\textbf{\href{https://www.keio.ac.jp/en/}{Keio University, Yokohama}}\\
+\textsc{May 17}& \footnotesize{- Analyzed research papers on factors affecting the quality of crowdsourced work, determined factors requiring further research}\\
+& \footnotesize{- Summarized the affect of the factors on the quality of outcome and set the context for further experiments on these factors}\\
+& \footnotesize{- Submitted the results to the Journal of Internet Services and Applications (JISA), SpringerOpen, as an experiment report}\\
+& \footnotesize{- Implemented visual regression testing using BackstopJS in SSTest, a testing module for SuperSQL, an extension for SQL}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Dec 16} & \textbf{Research and Development Intern}\hfill\textbf{\href{http://www.teknuance.com/}{Teknuance Info Solutions Pvt. Ltd., Chennai}}\\
+\textsc{Nov 16} & \footnotesize{- Analyzed and presented solution to a problem of data compression in small strings}\\
+& \footnotesize{- Used adaptive arithmetic coding combined with Good-Turing smoothing algorithm}\\
+\multicolumn{2}{c}{}\\
+
+\textsc{Jun 16} & \textbf{Web and App Development Intern}\hfill\textbf{\href{http://www.logic-square.com/}{LogicSquare Technologies, Kolkata}}\\
+\textsc{May 16}& \footnotesize{- Developed modules for managing pictures and contacts in a website application}\\
+& \footnotesize{- Implemented in MEAN stack using Parse backend}\\
+& \footnotesize{- Tested and debugged several components using logging and unit testing in the website application}\\
+& \footnotesize{- Developed backend for mobile app in NodeJS and Neo4J graph database for a social media android application}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jun 16} & \textbf{Web Development and Device Interfacing} \hfill\textbf{\href{https://yolohealth.in/}{YOLO Health, Mumbai}}\\
+\textsc{May 15} & \footnotesize{- Developed web app for medical data acquisition kiosk in AngularJS and Django}\\
+& \footnotesize{- Implemented user authentication feature using fingerprint}\\
+& \footnotesize{- Implemented video conferencing feature using QuikBlox API}\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+\vspace{-0.6cm}
+\begin{tabular}{p{19.7cm}}
+\fontsize{9}{12}\selectfont{
+\begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+ \item[Regression Modelling in Crime Data, Group project] Analyzed crime data as issued by 1990 US Census to find predict violent crimes per 100K population\newline
+ Used Forward Elimination, Backward Elimination and Mixed Stepwise Regression approach for variable selection\newline
+ Performed outlier removal and residual analysis to achieve Adjusted R-Squared of 0.657 using stepwise model
+ \item[Attendance Evaluation Using Facial Recognition, Group project] Implemented a MATLAB program to evaluate attendance using face recognition\newline
+ Trained the program using images of students to create eigenface and then used it to perform comparison and to mark attendance
+\end{description}
+}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	POSITIONS OF RESPONSIBILITY
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.3cm}
+\section{Positions of Responsibility}
+
+\begin{tabular}{r|p{17.5cm}}
+\textsc{Current} & \textbf{Captain}, Western Music Team\\
+& \footnotesize{- Captain of Western Music Team of Rajendra Prasad Hall of Residence for session 2017-18}\\
+& \footnotesize{- Responsible for leading a team of 9 members in various inter-hall competitions}\\
+\multicolumn{2}{c}{} \\
+\textsc{Apr 15} & \textbf{Team Leader, Marketing and Information Management}, AIESEC IIT Kharagpur\\
+\textsc{Aug 13} & \footnotesize{- Published various marketing materials including event reports and stakeholder reports}\\
+& \footnotesize{- Team Leader for marketing in Recruitment, February 2014. Witnessed 41\% increase in participation, sold 245 recruitment forms in IIT
+Kharagpur Campus, due to extensive marketing strategies like word-of-mouth, posters, and flyers}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+ \section{Scholastic Achievements}
+
+\vspace{-0.6cm}
+\begin{tabular}{p{19.7cm}}
+\fontsize{9}{12}\selectfont{
+\begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+ \item[Joint Entrance Examination(JEE), Advanced 2013] All India Rank 2558(top 1.6 percentile) in Joint Entrance Exam (JEE) - Advanced
+ \item[INSPIRE Scholarship] Recipient of Innovation in Science Pursuit for Inspired Research (INSPIRE) Scholarship since 2013
+\end{description}
+}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%----------------------------------------------------------------------------------------
+
+\end{document}
